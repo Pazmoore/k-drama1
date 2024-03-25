@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="forms.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>K-Drama Oppa</h1>
+    </header>
+    <div class="content">
+      <form>
+        <!-- Gender -->
+        <p>You are a...</p>
+        <input type="radio" id="male" name="gender" />
+        <label for="male">Male</label> <br />
+        <input type="radio" id="female" name="gender" />
+        <label for="female">Female</label>
+
+        <!-- Interests -->
+        <p>Who is interested in...</p>
+        <input type="checkbox" id="movies" />
+        <label for="movies">Oppa movies</label> <br />
+        <input type="checkbox" id="gossip" />
+        <label for="gossip">Oppa gossip</label> <br />
+        <input type="checkbox" id="everything" />
+        <label for="everything">Oppa everything</label> <br />
+
+        <!-- Contact details -->
+        <fieldset>
+          <legend>Contact Info</legend>
+          <input type="email" placeholder="Email" required />
+          <span class="tick"></span>
+          <input type="telephone" placeholder="Phone number" required />
+          <span class="tick"></span>
+        </fieldset>
+
+        <!-- Preferred -->
+        <p>Lets's Contact You</p>
+        <select>
+          <option>Email</option>
+          <option>Telephone</option>
+        </select>
+        <input type="submit" value="Be K-Drama Oppa" onclick="myFunction()" />
+      </form>
+    </div>
+
+    <script>
+      function myFunction() {
+        window.location.href = "index.html";
+      }
+    </script>
+  </body>
+</html>
